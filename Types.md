@@ -2,7 +2,7 @@ Scala에선 모든 값이 하나의 type을 갖는다.
 ![scala-types](https://user-images.githubusercontent.com/31606119/79055975-85c88c80-7c8c-11ea-8a48-068320ebe487.png)
 
 # Scala Type Hierarchy
-## Any
+## ```Any```
 - 모든 types의 supertype
 - subClasses: ```AnyVal```, ```AnyRef```
 - ```equals```, ```hashCode```, ```toString``` 메서드 등이 정의 돼있음
