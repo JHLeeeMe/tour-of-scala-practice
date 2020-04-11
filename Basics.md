@@ -1,21 +1,20 @@
 ## 표현식
 - 연산 가능한 명령문  
+- 모든 표현식은 어떠한 값을 갖음.
 ```scala
-
-scala> 1 + 1
-scala> println(1)
-scala> println(1 + 1)
-scala> println("Hello, " + "World!")
+1 + 1
+println(1)
+println(1 + 1)
+println("Hello, " + "World!")
 ```
 
 ## 상수
 - ```val``` 키워드  
 - 재할당 x
 ```scala
+val x = 1 + 1  // 타입 추론
 
-scala> val x = 1 + 1  // 타입 추론
-
-scala> val x: Int = 1 + 1  // 명시적 타입 지정
+val x: Int = 1 + 1  // 명시적 타입 지정
 ```
 
 ## 변수
@@ -23,11 +22,11 @@ scala> val x: Int = 1 + 1  // 명시적 타입 지정
 - 재할당 가능
 ```scala
 
-scala> var a = 123
+var a = 123
 
-scala> a = 12345
+a = 12345  // 재할당
 
-scala> var a: Int = 2828  // 마찬가지로 명시적으로 타입을 지정가능
+var a: Int = 2828  // 마찬가지로 명시적으로 타입을 지정가능
 ```
  
 ## 블록
@@ -41,7 +40,8 @@ println({
 ```
 
 ## 함수
-- 매개변수(parameter)를 가지는 표현식  
+- 매개변수(parameter)를 가지는 표현식
+- ```매개변수``` => ```표현식``` 형태
 ```scala
 (x: Int) => x + 1  // 익명 함수
 
@@ -58,10 +58,13 @@ val getTheAnswer = () => 42  // 매개변수 x
 def add(x: Int, y: Int): Int = x + y
 println(add(1, 2))  // 3
 
+// 두개의 매개변수 목록
 def addThenMultiply(x: Int, y: Int)(multiplier: Int): Int = (x + y) * multiplier
-println(addThenMultiply(1, 2) { 3 })  // 9
+println(addThenMultiply(1, 2)(3))  // 9
+// same As 
+// println(addThenMultiply(1, 2) {3})  <- 매개변수가 하나일 때 {} 사용가능
 
-def name: String = System.getProperty("user.name")
+def name: String = System.getProperty("user.name")  // 매개변수 x
 println("Hello, " + name + "!")
 ```
 
@@ -81,9 +84,10 @@ greeter.greet("Scala developer")  // Hello, Scala developer!
 
 ## 케이스 클래스
 - ```case class``` 키워드
-```case class Point(x: Int, y: Int)```
 - ```new``` 키워드 없이 인스턴스화 가능
 ```scala
+case class Point(x: Int, y: Int)
+
 val point = Point(1, 2)
 val anotherPoint = Point(1, 2)
 val yetAnotherPoint = Point(2, 2)
@@ -99,6 +103,7 @@ if (point == anotherPoint) {
 
 ## 객체
 - ```object``` 키워드
+- 객체 안의 메서드는 static 메서드 (?)
 ```scala
 object IdFactory {
   private var counter = 0
@@ -150,7 +155,9 @@ customGreeter.greet("Scala developer")  // How are you, Scala developer?
 ## 메인 메서드
 - 프로그램의 진입 지점
 - JVM에선 ```main``` 이라는 메서드가 필요, 문자열 배열 하나를 인자로 가짐
+```scala
 object Main {
   def main(args: Array[String]): Unit =
     println("Hello, Scala developer!")
 }
+```
