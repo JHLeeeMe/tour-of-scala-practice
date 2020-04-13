@@ -15,7 +15,7 @@ val ingredient = ("Sugar", 25)
 위 코드는 ```String```, ```Int``` 타입의 엘러먼트를 포함한다.  
 상수 ```ingredient```의 추론된 타입은 ```Tuple2[String, Int]```의 약칭인 ```(String, Int)``` 이다.  
 Scala에서는 튜플들을 나타내기 위해 다음의 클래스들을 사용한다.  
-```Tuple2```, ```Tuple3```, ..., ```Tuple22```. 각 클래스는 파라미터 타입의 갯수 만큼의 엘러먼트들을 가지고 있다.
+```Tuple2```, ```Tuple3```, ..., ```Tuple22```. 각 클래스는 표시된 숫자만큼의 엘러먼트들을 가지고 있다.
 
 - Tuple2를 생성하는 특별한 방법
 ```scala
@@ -23,7 +23,7 @@ Scala에서는 튜플들을 나타내기 위해 다음의 클래스들을 사용
 
 val ingredient2 = "Sugar" -> 25  // (Sugar, 25)
 
-// ```Tuple2[Int, String]```, ```Tuple2[String, Int]```, ```Tuple2[Char, String]```타입의 엘러먼트를 가지고있는 Tuple3
+// Tuple2[Int, String], Tuple2[String, Int], Tuple2[Char, String]타입의 엘러먼트들을 가지고있는 Tuple3
 // Tupel3[Tuple2[Int, String], Tuple2[String, Int], Tuple2[Char, String]]
 // ((1,str),(aa,4),(c,soso))
 val test = (1 -> "str", "aa" -> 4, 'c' -> "soso")  
@@ -40,7 +40,7 @@ mapTest0(2)  // second
 mapTest1(2)  // second
 ```
 한마디로다가 Map에 Tuple2 타입의 값을 넣으면  
-튜플의 0번째 인덱스가 key로 1번째 인덱스가 value로 간다.
+튜플의 0번째 인덱스가 ```key```로 1번째 인덱스가 ```value```로 간다.
 
 ## Tuple 클래스 살펴보기
 - 위에서 만든 Tuple2 클래스만 살펴보자.
