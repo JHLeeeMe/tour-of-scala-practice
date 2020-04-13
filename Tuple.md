@@ -24,7 +24,7 @@ Scala에서는 튜플들을 나타내기 위해 다음의 클래스들을 사용
 val ingredient2 = "Sugar" -> 25  // (Sugar, 25)
 
 // Tuple2[Int, String], Tuple2[String, Int], Tuple2[Char, String]타입의 엘러먼트들을 가지고있는 Tuple3
-// Tupel3[Tuple2[Int, String], Tuple2[String, Int], Tuple2[Char, String]]
+// Tuple3[Tuple2[Int, String], Tuple2[String, Int], Tuple2[Char, String]]
 // ((1,str),(aa,4),(c,soso))
 val test = (1 -> "str", "aa" -> 4, 'c' -> "soso")  
 ```
