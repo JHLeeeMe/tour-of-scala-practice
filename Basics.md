@@ -121,7 +121,7 @@ val newerId: Int = IdFactory.create()
 println(newerId)  // 2
 ```
 
-## 트레이트
+## 트레잍
 - ```trait``` 키워드
 - java의 인터페이스 느낌, python의 Mixin 느낌 -> 다중상속 가능
 ```scala
@@ -136,7 +136,7 @@ trait Greeter {
     println("Hello, " + name + "!")
 }
 ```
-- ```extends``` 키워드로 트레이트를 상속받을 수 있고, ```override``` 키워드로 구현 오버라이딩 가능
+- ```extends``` 키워드로 트레잍을 상속받을 수 있고, ```override``` 키워드로 구현 오버라이딩 가능
 ```scala
 class DefaultGreeter extends Greeter
 
