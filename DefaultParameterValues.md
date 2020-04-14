@@ -46,4 +46,4 @@ val m3 = new HashMap[String, Int](20, 0.8)
 val m4 = new HashMap[String, Int](loadFactor = 0.8)
 ```
 
-모든 기본 값에 이름을 지정한 파리미터를 활요할 수 있다.
+모든 기본 값에 이름을 지정한 파리미터를 활할 수 있다.
