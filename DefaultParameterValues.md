@@ -3,7 +3,7 @@
 Scala는 파라미터에 기본 값을 부여 가능  
 Java의 경우에는 기본 값을 제공하기 위해 수 많은 메서드를 오버로드 하는 상황이 발생, 이는 특히 생성자의 경우 그러하다.
 
-Java의 경우
+### Java의 경우
 ```java
 #!/usr/bin/env java
 
@@ -25,7 +25,7 @@ public class HashMap<K, V> {
 }
 ```
 
-Scala의 경우
+### Scala의 경우
 ```scala
 #!/usr/bin/env scala
 
