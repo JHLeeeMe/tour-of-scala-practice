@@ -21,7 +21,8 @@ abstract class AbsIterator {
 
 
 trait RichIterator extends AbsIterator {
-  def foreach(f: T => Unit) = { while (hasNext) f(next()) }
+  // T 타입을 인수로 취하고 return Unit인 함수를 인수로 취하고 return Unit인 foreach 메서드 
+  def foreach(f: T => Unit): Unit = { while (hasNext) f(next()) }
 }
 ```
 
