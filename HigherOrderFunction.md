@@ -90,7 +90,7 @@ case class WeeklyWeatherForecast(temperatures: Seq[Double]) {
 ## 고차 함수를 쓰는 이유
 - 여러 이유중 하나는 반복되는 코드를 줄일 수 있다는 것
 
-아래 코드는 고차 함수를 쓸 때와 쓰지 않았을 때를 비교함.
+아래 코드는 고차 함수를 쓸 때와 쓰지 않았을 때를 비교함. 더 장황해졌지만..
 ```scala
 #!/usr/bin/env scala
 
