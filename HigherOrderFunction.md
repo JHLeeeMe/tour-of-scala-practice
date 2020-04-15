@@ -71,6 +71,7 @@ val newSalaries = salaries.map(_ * 2)
 ## 메서드를 고차 함수의 인수로
 - 스칼라 컴파일러는 메서드를 함수로 강제한다. 그러므로
 - 메서드를 고차함수의 인수로 넣을 수 있다.
+- 위 ```apply``` 예제도 이러한 이유로 가능했던 것
 ```scala
 #!/usr/bin/env scala
 
