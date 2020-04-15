@@ -146,4 +146,5 @@ val url = getURL(endpoint, query)  // "https://www.example.com/users?id=1": Stri
 ```
 위 코드에서  
 urlBuilder의 return 타입은 ```(String, String) => String```이고,  
-urlBuilder의 return 값은 ```(endpoint: String, query: String) => s"https://www.example.com/$endpoint?$query"```익명함수 이다.
+urlBuilder의 return 값은  
+```(endpoint: String, query: String) => s"https://www.example.com/$endpoint?$query"```익명함수 이다.
