@@ -73,7 +73,7 @@ List(1, 2, 3, 4)
 
 ## Java의 경우
 - Java는 중첩 메서드를 지원하지 않는다고 했다.
-- Java에서의 메서드 안의 메서드를 정의 방법을 보자.
+- Java에서의 methods in method 표현을 보자.
 
 ### 방법 1
 - Interface를 이용한 형태
@@ -85,8 +85,9 @@ public class Test1 {
   }
 
   static Foo() {
-    myInterface r = () -> {
-      System.out.println("interface!!!!!!!!");
+    // 요 부분
+    myInterface r = () -> {  
+      System.out.println("interface!!!!!!!!");  
     }
     r.run();
   }
@@ -111,6 +112,7 @@ public class Test2 {
   static Foo() {
     // Local Class
     class Local {
+      // 요기
       void fun() {
         System.out.println("local!!!!!!!");
       }
